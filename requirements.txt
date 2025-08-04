@@ -1,0 +1,18 @@
+# Core Libraries
+pandas
+numpy
+scikit-learn
+
+# Modeling
+xgboost
+
+# App UI
+streamlit
+
+# Optional for better visuals / interpretability
+matplotlib
+seaborn
+shap
+
+# For deployment (optional)
+joblib

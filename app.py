@@ -3,6 +3,7 @@
 import streamlit as st
 import numpy as np
 import pickle
+from PIL import Image
 
 # Load the trained model and preprocessing tools
 model = pickle.load(open("model/xgb_model.pkl", "rb"))
@@ -14,8 +15,21 @@ st.set_page_config(page_title="Customer Churn Predictor", page_icon="💳")
 st.title("💳 Bank Customer Churn Prediction App")
 st.markdown("Predict whether a bank customer is likely to **churn** based on profile details.")
 
+
+# Project Overview
+st.header("🎯 Project Overview")
+st.markdown("---")
+
+st.markdown("""
+This **Customer Churn Prediction System** is an end-to-end machine learning solution designed to help banks 
+proactively identify customers who are likely to leave their services. Using advanced predictive analytics 
+and an interactive web interface, this system empowers financial institutions to make data-driven decisions 
+for customer retention strategies.
+""")
+
 # === Input Section === #
 st.header("📋 Customer Details")
+st.markdown("---")
 
 credit_score = st.slider("Credit Score", 300, 850, 650)
 gender = st.radio("Gender", ["Male", "Female"])
@@ -49,3 +63,10 @@ if st.button("🔍 Predict Churn"):
         st.error(f"⚠️ The customer is **likely to churn**.\n\nChurn Probability: {probability:.2%}")
     else:
         st.success(f"✅ The customer is **not likely to churn**.\n\nChurn Probability: {probability:.2%}")
+
+
+# Add Power BI Dashboard Section
+st.markdown("---")
+st.header("📊 Business Intelligence Dashboard")
+powerbi_img = Image.open("Churn analysis.jpg")
+st.image(powerbi_img, caption="Customer Churn Analytics Dashboard")

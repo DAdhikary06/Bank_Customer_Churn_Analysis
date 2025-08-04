@@ -126,6 +126,8 @@ ChurnPrediction/
 
 ## 📊 Business Intelligence Dashboard
 
+![Power BI Dashboard](Churn analysis.png)
+
 The project includes a complementary **Power BI dashboard** providing:
 
 - Customer churn trend analysis

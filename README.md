@@ -126,7 +126,10 @@ ChurnPrediction/
 
 ## 📊 Business Intelligence Dashboard
 
-![Power BI Dashboard](images/Churn analysis.jpg)
+<div align="center">
+  <img src="images/churn_analysis.jpg" alt="Power BI Dashboard" width="800"/>
+  <p><em>Customer Churn Analytics - Executive Dashboard</em></p>
+</div>
 
 The project includes a complementary **Power BI dashboard** providing:
 

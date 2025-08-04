@@ -68,5 +68,5 @@ if st.button("🔍 Predict Churn"):
 # Add Power BI Dashboard Section
 st.markdown("---")
 st.header("📊 Business Intelligence Dashboard")
-powerbi_img = Image.open("Churn analysis.jpg")
+powerbi_img = Image.open("images/Churn analysis.jpg")
 st.image(powerbi_img, caption="Customer Churn Analytics Dashboard")
